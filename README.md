@@ -3,11 +3,16 @@ My supercool Vim8 config
 
 ## Replicating the repository on a machine
 ```
-git clone --recursive https://github.com/z10n0101/vimplugins.git
-ln -sf vimplugins ~/.vim
-ln -sf vimplugins/vimrc ~/.vimrc
-vim
-:helptags ALL
+option 1 (~/.vim should be empty):
+  cd ~/.vim
+  git clone --recursive https://github.com/z10n0101/vimplugins.git .
+
+option 2:
+  git clone --recursive https://github.com/z10n0101/vimplugins.git
+  ln -sf vimplugins ~/.vim
+  ln -sf vimplugins/vimrc ~/.vimrc
+  vim
+  :helptags ALL
 ```
 
 ## Installing plugins
