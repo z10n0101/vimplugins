@@ -5,6 +5,10 @@ colorscheme desert
 syntax on
 filetype plugin indent on
 
+" save history to /var/tmp (create folders manully)
+set backupdir=/var/tmp/.backup//
+set directory=/var/tmp/.swp//
+
 set tabstop=8
 set expandtab
 set shiftwidth=4
@@ -23,7 +27,7 @@ augroup vimrc_autocmds
 augroup END
 
 " <Leader> is \
-noremap <Leader>ee :e $HOME/.vimrc<cr>
+noremap <Leader>ee :e $HOME/.vim/vimrc<cr>
 
 " No beep
 set visualbell t_vb=
