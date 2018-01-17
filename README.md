@@ -1,6 +1,19 @@
 # vimplugins
 My supercool Vim8 config
 
+## Vim < 8 fix
+```
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# Add this to vimrc file
+
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+execute pathogen#infect('bundle/{}', '~/.vim/pack/plugins/start/{}')
+```
+
 ## Replicating the repository on a machine
 ```
 option 1 (~/.vim should be empty):
