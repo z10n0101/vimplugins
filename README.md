@@ -56,3 +56,9 @@ git submodule foreach git pull origin master
 cd ~/.vim
 git commit -am "Updated plugins."
 ```
+
+## Pull
+```
+cd ~/.vim
+git submodule update"
+```
