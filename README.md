@@ -60,5 +60,5 @@ git commit -am "Updated plugins."
 ## Pull
 ```
 cd ~/.vim
-git submodule update"
+git submodule update --init
 ```
